@@ -1,10 +1,4 @@
 {
-  "/page": "app/page.js",
-  "/inscription/page": "app/inscription/page.js",
-  "/connexion/page": "app/connexion/page.js",
-  "/api/connexion/route": "app/api/connexion/route.js",
   "/api/user-status/route": "app/api/user-status/route.js",
-  "/api/inscription/route": "app/api/inscription/route.js",
-  "/tableau/page": "app/tableau/page.js",
-  "/api/reservation/route": "app/api/reservation/route.js"
+  "/page": "app/page.js"
 }

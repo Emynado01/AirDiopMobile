@@ -1,4 +1,4 @@
-// File: C:\Users\emyna\Documents\Ecole\React\ProjetINT\AirDiop-main03\AirDiop-main\src\app\api\user-status\route.ts
+// File: C:\Users\emyna\Documents\Ecole\React\ProjetINT\AirDiopMobile-main03\AirDiopMobile-main\src\app\api\user-status\route.ts
 import * as entry from '../../../../../src/app/api/user-status/route.js'
 import type { NextRequest } from 'next/server.js'
 
