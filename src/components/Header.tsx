@@ -48,6 +48,9 @@ export const Header: React.FC = () => {
             <Link href="/decouverte" className="text-gray-700 dark:text-gray-200 hover:text-sky-500 font-medium transition-colors">
               Découverte
             </Link>
+            <Link href="/admin" className="text-gray-700 dark:text-gray-200 hover:text-sky-500 font-medium transition-colors">
+              Admin
+            </Link>
           </nav>
 
           <div className="flex items-center space-x-2">

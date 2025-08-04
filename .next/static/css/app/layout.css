@@ -642,6 +642,9 @@ video {
 .inline-flex {
   display: inline-flex;
 }
+.table {
+  display: table;
+}
 .grid {
   display: grid;
 }
@@ -767,6 +770,9 @@ video {
 }
 .flex-grow {
   flex-grow: 1;
+}
+.table-auto {
+  table-layout: auto;
 }
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;

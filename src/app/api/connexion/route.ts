@@ -20,7 +20,7 @@ export async function POST(req: Request) {
   }
 
   // Générer le JWT
-  const token = jwt.sign({ id: user.id, email: user.email }, JWT_SECRET, { expiresIn: '7d' });
+  const token = jwt.sign({ id: user.id, email: user.email, isAdmin: user.isAdmin }, JWT_SECRET, { expiresIn: '7d' });
 
   // Créer la réponse et ajouter le cookie
   const res = new Response(JSON.stringify({
