@@ -1,5 +1,5 @@
 import React from 'react';
-import AdminUserTable from '/Users/emyna/Documents/Ecole/React/ProjetINT/AirDiopMobile-main03/AirDiopMobile-main/src/components/AdminUserTable';
+import AdminUserTable from '@/components/AdminUserTable';
 
 export default function AdminUsersPage() {
   return (

@@ -25,6 +25,18 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+
+    // --- Ajout des alias depuis la racine vers src ---
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["src/components/*"],
+      "@/lib/*":        ["src/lib/*"],
+      "@/contexts/*":   ["src/contexts/*"],
+      "@/services/*":   ["src/services/*"],
+      "@/types/*":      ["src/types/*"],
+      "@/app/*":        ["src/app/*"]
+    },
+
     "plugins": [
       {
         "name": "next"
@@ -35,8 +47,9 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/test-prisma.js"  ],
+    "**/*.tsx",
+    "src/test-prisma.js"
+  ],
   "exclude": [
     "node_modules"
   ]

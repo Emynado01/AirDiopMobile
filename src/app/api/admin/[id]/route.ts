@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
-import { requireAdmin } from '/Users/emyna/Documents/Ecole/React/ProjetINT/AirDiopMobile-main03/AirDiopMobile-main/src/lib/auth';
+import { requireAdmin } from '@/lib/auth';
 const prisma = new PrismaClient();
 export async function DELETE(req: Request, { params }: { params: { id: string } }) {
   try {
