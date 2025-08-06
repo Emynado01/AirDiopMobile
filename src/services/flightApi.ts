@@ -66,7 +66,7 @@ export interface AviationStackFlight {
 export async function searchFlights(params: {
   dep_iata?: string;
   arr_iata?: string;
-  // SUPPRIME flight_date
+  flight_date?: string;
   // airline_name?: string; // optionnel, mais peu fiable avec la version gratuite
   flight_status?: string; // "active", "landed", "scheduled"
 }) {
@@ -81,6 +81,7 @@ export async function searchFlights(params: {
   };
   if (params.dep_iata) safeParams.dep_iata = params.dep_iata;
   if (params.arr_iata) safeParams.arr_iata = params.arr_iata;
+  if (params.flight_date) safeParams.flight_date = params.flight_date;
   if (params.flight_status) safeParams.flight_status = params.flight_status;
 
   const query = new URLSearchParams(safeParams);
