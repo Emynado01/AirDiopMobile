@@ -1,8 +1,8 @@
-// File: C:\Users\emyna\Documents\Ecole\React\ProjetINT\AirDiopMobile-main03\AirDiopMobile-main\src\app\api\admin\[id]\route.ts
-import * as entry from '../../../../../../src/app/api/admin/[id]/route.js'
+// File: C:\Users\emyna\Documents\Ecole\React\ProjetINT\AirDiopMobile-main03\AirDiopMobile-main\src\app\api\admin\users\[id]\route.ts
+import * as entry from '../../../../../../../src/app/api/admin/users/[id]/route.js'
 import type { NextRequest } from 'next/server.js'
 
-type TEntry = typeof import('../../../../../../src/app/api/admin/[id]/route.js')
+type TEntry = typeof import('../../../../../../../src/app/api/admin/users/[id]/route.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

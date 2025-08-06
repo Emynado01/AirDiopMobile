@@ -9,7 +9,7 @@ import { DarkModeContext } from '../contexts/DarkModeContext';
 import InstallPrompt from './InstallPrompt';
 
 export const Header: React.FC = () => {
-  const { connected } = useAuth();
+  const { connected, user } = useAuth();
   const [mobileOpen, setMobileOpen] = useState(false);
   const { dark, toggleDark } = useContext(DarkModeContext);
 
@@ -48,9 +48,11 @@ export const Header: React.FC = () => {
             <Link href="/decouverte" className="text-gray-700 dark:text-gray-200 hover:text-sky-500 font-medium transition-colors">
               Découverte
             </Link>
-            <Link href="/admin" className="text-gray-700 dark:text-gray-200 hover:text-sky-500 font-medium transition-colors">
+            {connected && user?.isAdmin && (
+            <Link href="/admin" className="text-red-500 hover:text-red-600">
               Admin
             </Link>
+          )}
           </nav>
 
           <div className="flex items-center space-x-2">
@@ -104,6 +106,11 @@ export const Header: React.FC = () => {
           <Link href="/decouverte" className="text-gray-700 dark:text-gray-200 hover:text-sky-500 font-medium transition-colors" onClick={() => setMobileOpen(false)}>
             Découverte
           </Link>
+          {connected && user?.isAdmin && (
+            <Link href="/admin" className="text-red-500 hover:text-red-600">
+              Admin
+            </Link>
+          )}
           {!connected && (
             <Link href="/connexion" className="flex items-center space-x-2 px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-900 rounded-lg transition-colors" onClick={() => setMobileOpen(false)}>
               <User className="w-5 h-5" />

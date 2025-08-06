@@ -20,7 +20,8 @@ export async function GET(req: NextRequest) {
         id: true,
         email: true,
         name: true,
-        lastname: true
+        lastname: true,
+        isAdmin: true
       }
     });
     if (!user) {
